@@ -1,8 +1,10 @@
 public class CoffeeProblem
 {
-    public CoffeeProblemState _start;
+    private CoffeeWorldState _start;
 
-    public CoffeeProblem(CoffeeProblemState start)
+    
+    
+    public CoffeeProblem(CoffeeWorldState start)
     {
         _start = start;
     }
