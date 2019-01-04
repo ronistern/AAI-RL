@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="526f8638-902f-4b8c-8714-4e077fd58229" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CoffeeWorldPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EpsilonGreedyPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QLearning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RandomPolicy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeEnvironment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeStateFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeWorldAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeWorldAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeWorldState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeWorldState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EpsilonGreedyPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EpsilonGreedyPolicy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QLearning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QLearning.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="133">
               <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -52,8 +44,8 @@
       <file leaf-file-name="QLearning.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QLearning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+            <state relative-caret-position="440">
+              <caret line="47" column="72" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
               <folding>
                 <element signature="e#592#593#0" expanded="true" />
                 <element signature="e#627#628#0" expanded="true" />
@@ -76,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EpsilonGreedyPolicy.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EpsilonGreedyPolicy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/EpsilonGreedyPolicy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="25" column="23" selection-start-line="25" selection-end-line="26" />
+            <state relative-caret-position="459">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,8 +161,8 @@
         <option value="$PROJECT_DIR$/src/CoffeeEnvironment.java" />
         <option value="$PROJECT_DIR$/src/QValues.java" />
         <option value="$PROJECT_DIR$/src/QLearning.java" />
-        <option value="$PROJECT_DIR$/src/EpsilonGreedyPolicy.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/EpsilonGreedyPolicy.java" />
       </list>
     </option>
   </component>
@@ -285,6 +277,14 @@
       <option name="presentableId" value="Default" />
       <updated>1545643399428</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial revision">
+      <created>1546565767009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546565767009</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -321,6 +321,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial revision" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial revision" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -514,17 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QLearning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-          <folding>
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoffeeEnvironment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -537,20 +530,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EpsilonGreedyPolicy.java">
+    <entry file="file://$PROJECT_DIR$/src/QLearning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="25" column="23" selection-start-line="25" selection-end-line="26" />
+        <state relative-caret-position="440">
+          <caret line="47" column="72" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
+        <state relative-caret-position="133">
           <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EpsilonGreedyPolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

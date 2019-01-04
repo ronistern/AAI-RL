@@ -17,6 +17,7 @@ public class EpsilonGreedyPolicy implements CoffeeWorldPolicy {
         this.epsilon = epsilon;
         this.qValues = qValues;
         this.environment = environment;
+        this.random = new Random();
     }
     @Override
     public CoffeeWorldAction getAction(CoffeeWorldState state) {

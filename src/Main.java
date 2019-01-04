@@ -52,7 +52,7 @@ public class Main
 
         CoffeeWorldPolicy policy = new RandomPolicy(environment);
         double accumulatedRewards=0.0;
-        int iterations = 100000;
+        int iterations = 1000000;
         for(int i=0;i<iterations;i++){
             //System.out.println(i+":"+me.runEpisode(environment,policy,discountFactor));
             accumulatedRewards += me.runEpisode(environment,policy,discountFactor);
@@ -62,7 +62,7 @@ public class Main
                 " on " + iterations + " iterations");
 
         // Q Learning
-        double learningRate = 0.1;
+        double learningRate = 1.0;
         double epsilon = 0.1;
         QLearning learner = new QLearning(environment,learningRate,discountFactor);
         EpsilonGreedyPolicy epsilonGreedyPolicy = new EpsilonGreedyPolicy(environment,
@@ -70,7 +70,7 @@ public class Main
 
         accumulatedRewards=0.0;
         for(int i=0;i<iterations;i++){
-            accumulatedRewards += learner.runEpisode(policy);
+            accumulatedRewards += learner.runEpisode(epsilonGreedyPolicy);
         }
         System.out.println("Epsilon greedy policy on " + iterations +
                 " obtained "+ stringFormat.format(accumulatedRewards) +

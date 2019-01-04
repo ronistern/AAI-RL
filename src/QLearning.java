@@ -4,7 +4,7 @@ public class QLearning {
     private double discountFactor;
     private QValues qValues;
     private double learningRate;
-
+    private int iterations;
     private CoffeeWorldPolicy policy;
 
     public QLearning(CoffeeEnvironment environment,
@@ -14,6 +14,8 @@ public class QLearning {
         this.qValues = new QValues();
         this.learningRate = learningRate; // TODO: Decay the learning factor
         this.discountFactor = discountFactor;
+
+        this.iterations = 0;
     }
 
     public QValues getQValues(){
@@ -40,6 +42,10 @@ public class QLearning {
         double newQ = this.learningRate *oldQ+ (1-this.learningRate)*
                 (outcome.reward + this.discountFactor*maxQ);
         this.qValues.setQValue(state,action,newQ);
+
+        // Update learning rate
+        this.iterations=this.iterations+1;
+        this.learningRate = 1/(java.lang.Math.pow(this.iterations,0.75));
     }
 
     /**
