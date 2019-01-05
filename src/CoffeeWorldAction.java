@@ -1,8 +1,8 @@
 public class CoffeeWorldAction {
-    public static CoffeeWorldAction UP = new CoffeeWorldAction("Up", +1,0);
+    public static CoffeeWorldAction UP = new CoffeeWorldAction("Down", +1,0);
     public static CoffeeWorldAction DOWN = new CoffeeWorldAction("Up", -1,0);
-    public static CoffeeWorldAction RIGHT = new CoffeeWorldAction("Up", 0,+1);
-    public static CoffeeWorldAction LEFT = new CoffeeWorldAction("Up", 0,-1);
+    public static CoffeeWorldAction RIGHT = new CoffeeWorldAction("Right", 0,+1);
+    public static CoffeeWorldAction LEFT = new CoffeeWorldAction("Left", 0,-1);
     public static CoffeeWorldAction[] MOVE_ACTIONS = new CoffeeWorldAction[]{UP, DOWN, RIGHT, LEFT};
     public static CoffeeWorldAction DRINK_COFFEE = new CoffeeWorldAction("Drink coffee", +1,+1);
 

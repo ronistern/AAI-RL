@@ -9,4 +9,8 @@ public class CoffeeWorldState
     }
 
 
+    @Override
+    public String toString() {
+        return "("+this.robotAtRow+","+this.robotAtCol+")";
+    }
 }

@@ -1,13 +1,7 @@
-public abstract class AbstractQLearningAgent implements ReinforcementLearningAgent{
+public abstract class AbstractQLearningAgent extends ReinforcementLearningAgent{
 
     // The table that contains the Q values
     private QValues qValues;
-
-    // A class that represents the world
-    protected CoffeeEnvironment environment;
-
-    // Discount factor (gamma)
-    protected double discountFactor;
 
     // Learning rate (alpha)
     protected double learningRate;
@@ -17,10 +11,9 @@ public abstract class AbstractQLearningAgent implements ReinforcementLearningAge
 
     public AbstractQLearningAgent(CoffeeEnvironment environment,
                                   double discountFactor){
-        this.environment=environment;
+        super(environment, discountFactor);
         this.qValues = new QValues();
         this.learningRate = 1;
-        this.discountFactor = discountFactor;
         this.iterations = 0;
     }
 

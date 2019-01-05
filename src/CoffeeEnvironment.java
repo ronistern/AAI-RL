@@ -29,13 +29,13 @@ public class CoffeeEnvironment {
     private double spillProbability[][]; // The probability to spill the coffee in each grid cell
 
     // All the non-goal states
-    private CoffeeWorldState states[][];
+    protected CoffeeWorldState states[][];
 
     // The special states
     private CoffeeWorldState initialState; // This is where the coffee machine is
     private CoffeeWorldState coffeeAtHandState; // This is where the coffee is in my hand
 
-    private CoffeeWorldState goalState; // This is a dummy state representing the happiness after drinking the coffee
+    protected CoffeeWorldState goalState; // This is a dummy state representing the happiness after drinking the coffee
 
     public CoffeeEnvironment(int rows, int cols, double[][] spillProbability){
         this.randomGenerator = new Random();
