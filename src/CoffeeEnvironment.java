@@ -4,6 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * This class represents the world's behavior in the Coffee World domain.
+ * In this world, there is  rows x cols grid, where rows and cols are parameters.
+ * The agent starts in grid cell (0,0) with a hot cup of coffee.
+ * You are sitting in grid cell (rows-1, cols-1) and you want to drink your coffee.
+ * The agent can move with the coffee cup to the four cardinal directions: up, down, left, and right,
+ * as long as it stays on the grid. However, the floor is slippery,
+ * and the agent might spill the coffee when it moves.
+ * An episode ends either when the agent spilled the coffee,
+ * or when the agent brings you the coffee and you drink it.
+ *
+ * Details:
+ * 1. The reward for drinking the coffee is 100.
+ * 2. You probability of spilling the coffee can be different for different grid cells.
+ * Note that these probabilities are not known to the agent (they are private).
+ */
 public class CoffeeEnvironment {
 
     private Random randomGenerator;
@@ -79,7 +95,7 @@ public class CoffeeEnvironment {
     public double getReward(CoffeeWorldState state, CoffeeWorldAction action){
         if (this.coffeeAtHandState.equals(state)
                 && (CoffeeWorldAction.DRINK_COFFEE.equals(action)))
-            return 1.0;
+            return 100.0;
         else return 0.0;
     }
     /**
