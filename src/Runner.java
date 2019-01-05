@@ -118,11 +118,10 @@ public class Runner {
         ReinforcementLearningAgent agent;
         double epsilon = 0.1;
         agent = new EpsilonGreedyAgent(environment, discountFactor,epsilon);
-        utility = runner.runEpisodes(environment, agent, discountFactor, iterations);
-        System.out.format("RL: Average utility over %d iterations is %.2f%n", iterations,utility);
-
-
-
+        for(int i=100; i<=iterations;i=i*2) {
+            utility = runner.runEpisodes(environment, agent, discountFactor, i);
+            System.out.format("RL: Average utility over %d iterations is %.2f%n", i, utility);
+        }
     }
 
 }
